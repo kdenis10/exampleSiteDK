@@ -166,37 +166,8 @@ header button:hover {
     }
 }
 
-@media(orientation:landscape) and (min-width:653px) {
-    header img {
-        margin: 0 auto;
-        height: 90%;
-        bottom: 0;
-        right: 0;
-    }
 
-    header .welcome {
-        left: 7%;
-        top: 7%;
-        text-align: left;
-    }
-
-    header h1 {
-        font-weight: 700;
-        font-size: 26px;
-    }
-
-    header h2 {
-        font-weight: 500;
-        font-size: 18px;
-    }
-
-    header button {
-        font-size: 16px;
-        margin-top: 25px;
-    }
-}
-
-@media(orientation:landscape) and (min-width:731px) {
+@media(orientation:landscape) and (min-width:768px) {
     header img {
         margin: 0 auto;
         height: 90%;
@@ -226,35 +197,6 @@ header button:hover {
     }
 }
 
-@media(orientation:landscape) and (min-width:823px) {
-    header img {
-        margin: 0 auto;
-        height: 90%;
-        bottom: 0;
-        right: 0;
-    }
-
-    header .welcome {
-        left: 7%;
-        top: 15%;
-        text-align: left;
-    }
-
-    header h1 {
-        font-weight: 700;
-        font-size: 30px;
-    }
-
-    header h2 {
-        font-weight: 500;
-        font-size: 20px;
-    }
-
-    header button {
-        font-size: 18px;
-        margin-top: 40px;
-    }
-}
 
 @media(orientation:landscape) and (min-width:1024px) {
     header img {
