@@ -1,0 +1,989 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    /*
+    max-width: 1024px;
+    margin: 0 auto;
+*/
+    position: relative;
+    height: 100vh;
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+header > * {
+    position: absolute;
+}
+
+header img {
+    height: 60%;
+    bottom: 0;
+    right: 0;
+}
+
+header .welcome {
+    z-index: 1;
+    left: 5%;
+    right: 5%;
+}
+
+header div {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-weight: regular;
+    font-size: 20px;
+}
+
+header h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header button {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: transparent;
+    line-height: 32px;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*-----------------@media landscape------------*/
+@media(orientation:landscape) and (min-width:533px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        top: 14%;
+        text-align: left
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    header button {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:568px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 7%;
+        top: 14%;
+        text-align: left
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    header button {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 7%;
+        top: 15%;
+        text-align: left;
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    header button {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:653px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 7%;
+        top: 7%;
+        text-align: left;
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    header button {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:731px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 7%;
+        top: 15%;
+        text-align: left;
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    header button {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:823px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 7%;
+        top: 15%;
+        text-align: left;
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    header button {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 5%;
+        top: 12%;
+        text-align: left;
+        line-height: 2;
+    }
+
+    header p {
+        font-size: 80px;
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 38px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    header button {
+        padding: 15px;
+        font-size: 28px;
+        margin-top: 50px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1366px) {
+    header img {
+        margin: 0 auto;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        left: 7%;
+        top: 15%;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    header p {
+        margin-bottom: 20px;
+        font-size: 100px;
+    }
+
+    header h1 {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    header button {
+        margin-top: 75px;
+        padding: 10px 25px;
+        font-size: 30px;
+    }
+}
+
+
+/*-----------------@media portrait------------*/
+@media(orientation:portrait) and (min-height:533px) {
+    header img {
+        margin: 0 auto;
+        height: 55%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        top: 3%;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 36px;
+    }
+
+    header h1 {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+}
+
+@media(orientation:portrait) and (min-height:731px) {
+    header img {
+        margin: 0 auto;
+        height: 55%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        top: 5%;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 40px;
+    }
+
+    header h1 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    header button {
+        font-size: 16px;
+    }
+}
+
+@media(orientation:portrait) and (min-height:1024px) {
+    header img {
+        margin: 0 auto;
+        height: 62%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        top: 3%;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-weight: 600;
+        font-size: 34px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    header button {
+        margin-top: 25px;
+        padding: 10px;
+        font-size: 22px;
+    }
+}
+
+@media(orientation:portrait) and (min-height:1366px) {
+    header img {
+        margin: 0 auto;
+        height: 60%;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .welcome {
+        top: 5%;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-weight: 600;
+        font-size: 34px;
+    }
+
+    header h2 {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 28px;
+    }
+
+    header button {
+        padding: 15px;
+        margin-top: 50px;
+        font-size: 22px;
+    }
+}
+
+/*--------------Sekcja 1-------------*/
+
+.features {
+    
+    text-align: center;
+    margin-top: 40px;
+    padding: 5%;
+}
+
+.features h1 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.features img {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 230px;
+    min-height: 150px;
+}
+
+.features h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.features p {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media(min-width:768px) {
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+    }
+
+    .features p {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 2%;
+    }
+
+    .features h1 {
+        font-size: 34px;
+    }
+
+    .features h2 {
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+}
+
+@media(min-width:1366px) {
+    .feature {
+        max-width: 1366px;
+        margin: 10px auto 0;
+        padding: 3%;
+    }
+
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 22px;
+    }
+
+    .features p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+}
+
+
+
+/*---------------Portfolio-------------*/
+
+.portfolio {
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px 20px 0px;
+    text-align: left;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.portfolio .projekt {
+    max-width: 1600px;
+    margin: 0 auto 20px;
+}
+
+.portfolio .projekt:nth-of-type(odd) {
+    background-color: orange;
+}
+
+.portfolio .projekt:nth-of-type(even) {
+    background-color: cadetblue;
+}
+
+@media(min-width:768px) {
+    .portfolio h1 {
+        font-size: 36px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 26px;
+        text-indent: 40px;
+
+    }
+
+    .portfolio .about p {
+        font-size: 16px;
+        padding-left: 40px;
+    }
+
+    .portfolio .projekt {
+
+        margin-bottom: 40px;
+    }
+}
+
+@media(orientation:landscape) {
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .projekt:nth-of-type(even) .web {
+        float: right;
+    }
+
+    .portfolio .projekt:nth-of-type(even) .web {
+        float: right;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1366px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 50px;
+        font-size: 28px;
+        margin-bottom: 50px;
+        text-indent: 40px;
+
+    }
+
+    .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+        line-height: 180%;
+    }
+
+    .portfolio .projekt {
+
+        margin-bottom: 40px;
+    }
+}
+
+/*--------sekcja slogan------*/
+
+.slogan {
+    max-width: 1366px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(../img/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.slogan h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.slogan p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.slogan p.author {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+.slogan .bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 20px;
+}
+
+
+@media(orientation:landscape) {
+    .slogan p {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:768px) {
+    .slogan h1 {
+        font-size: 46px;
+        margin-bottom: 35px;
+    }
+
+    .slogan p {
+        font-size: 32px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+
+}
+
+@media(min-width:1024px) {
+    .slogan .bg {
+        padding: 80px 10px;
+    }
+
+    .slogan h1 {
+        font-size: 50px;
+        margin-bottom: 55px;
+    }
+
+    .slogan p {
+        font-size: 32px;
+        width: 60%;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+/*--------------Hobby---------------*/
+.hobby {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 30vh;
+}
+
+.hobby .item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../img/gory.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../img/travelling.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../img/car.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../img/family.jpg);
+}
+
+.hobby .item p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    /*    line-height: 30vh;*/
+    text-shadow: 0 0 10px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.hobby h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 10px;
+}
+
+@media(min-width:533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+}
+
+@media(min-width:768px) {
+    .hobby h1 {
+        font-size: 40px;
+    }
+
+    .hobby .item {
+        height: 35vh;
+    }
+
+    .hobby .item p {
+        font-size: 24px;
+    }
+}
+
+@media(min-width:1024px) {
+    .hobby h1 {
+        font-size: 44px;
+    }
+
+    .hobby .item {
+        height: 30vh;
+    }
+
+    .hobby .item p {
+        padding: 0;
+        font-size: 26px;
+        line-height: 30vh;
+        opacity: 0;
+        transition: 0.7s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 0.8s;
+    }
+
+    .hobby .item:hover {
+        background-size: 145%;
+    }
+}
+
+/*-----------kontakt-----------*/
+.contact {
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #000;
+    padding: 30px 20px;
+}
+
+.contact h1 {
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact input {
+    font-size: 12px;
+    height: 36px;
+    padding: 5px 5px;
+}
+
+.contact textarea {
+    font-size: 12px;
+    height: 130px;
+}
+
+.contact button {
+    height: 40px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact .socials {
+    padding-top: 15px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.contact .social img {
+    float: left;
+    width: 12%;
+}
+
+.contact .social span {
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+@media(min-width:533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media(min-width:1024px) {
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    background-color:#6495ED;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
